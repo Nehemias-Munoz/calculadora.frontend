@@ -1,4 +1,19 @@
-h1{
-    font-size: larger;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.card-body {
+    background-color: #000000a6;
+}
+div .card-header {
+    background-color: plum;
+}
+.titulo {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.div-imagen-fondo {
+    background-image: url(https://www.montessoriarica.cl/wp-content/uploads/2018/06/vestibulando-prova-matematica-sites-gratuitos-noticias-1442442266521.jpg);
+    background-size: 250px;
+    border-radius: 5rem;
 }
