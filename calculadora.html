@@ -15,14 +15,17 @@
     <title>Sprint M2</title>
   </head>
   <body>
-    <header></header>
     <main class="container">
       <section class="row">
-        <h1>Calculadora Basica</h1>
+        <div class="div-imagen-fondo">
+          <div class="titulo">
+            <h1>Calculadora Básica</h1>
+          </div>
+        </div>
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <input type="text" class="form-control" readonly />
+              <input type="text" class="form-control" readonly id="result"/>
             </div>
             <div class="card-body">
               <div class="row mb-1">
@@ -94,43 +97,43 @@
                 <div class="col-5">
                   <div class="row mb-1">
                     <div class="col-6">
-                      <button type="button" class="btn btn-info w-100">
+                      <button type="button" class="btn btn-info w-100" onclick="clearOneChar()">
                         DEL
                       </button>
                     </div>
                     <div class="col-6">
-                      <button type="button" class="btn btn-info w-100">
+                      <button type="button" class="btn btn-info w-100" onclick="clearTotalChars()">
                         AC
                       </button>
                     </div>
                   </div>
                   <div class="row mb-1">
                     <div class="col-6">
-                      <button type="button" class="btn btn-info w-100">
-                        X
+                      <button type="button" class="btn btn-info w-100 operator">
+                        *
                       </button>
                     </div>
                     <div class="col-6">
-                      <button type="button" class="btn btn-info w-100">
+                      <button type="button" class="btn btn-info w-100 operator">
                         /
                       </button>
                     </div>
                   </div>
                   <div class="row mb-1">
                     <div class="col-6">
-                      <button type="button" class="btn btn-info w-100">
+                      <button type="button" class="btn btn-info w-100 operator">
                         +
                       </button>
                     </div>
                     <div class="col-6">
-                      <button type="button" class="btn btn-info w-100">
+                      <button type="button" class="btn btn-info w-100 operator">
                         -
                       </button>
                     </div>
                   </div>
                   <div class="row mb-1">
                     <div class="col-12">
-                      <button type="button" class="btn btn-success w-100">
+                      <button type="button" class="btn btn-success w-100" onclick="getResult()">
                         =
                       </button>
                     </div>
